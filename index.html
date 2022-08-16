@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<!-- Content display -tag -->
+<!doctype html>
+<head>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>Javascript Fundamental</h1>
+Variables -> var, let, const <br/>
+---------------
+scope of variables <br>
+------------------
+
+outside declared ->  let , var, const (global)<br>
+var ->   function scope  -> declared var variable inside fun() , can access only within fun();<br>
+const -> function scope -> declared var variable inside fun() , can access only within fun();<br>
+const -> must initialization (value assigned) , <br>
+ % after intialization can't change -> primitive type. (number,string,boolean,null) <br>
+after intialization can change ->reference type(array,object)
+let -> block scope -> {} fun funName(){}, if(condn){} else{} , switch{} ->declared var variable inside {} , can access only within {};<br>
+
+
+
+</body>
+<script src="./script.js"></script>
 </html>
