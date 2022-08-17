@@ -1,3 +1,18 @@
-# web-platform-sydlaa
+## DataType
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-sydlaa)
+## Primitive Type
+
+number (0-9 /decimal ),
+string("" ,''),
+boolean (true/false),
+
+null -> user defined value
+ex let place=null;
+
+undefined -> variable declared value not assigned
+ex: let a;
+
+## Reference Type
+
+Object
+Array
