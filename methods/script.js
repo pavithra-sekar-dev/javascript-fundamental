@@ -56,7 +56,7 @@ let persons = [
 ];
 //iterate
 for (let i in fruits) {
-  console.log(i, fruits[i]);
+  console.log('for in ', i, fruits[i]);
 }
 //for loop
 //intialization, condn, inc/dec
@@ -66,7 +66,7 @@ for (let i = 0; i < persons.length; i++) {
   let ele = Object.keys(persons[i]);
   // ["fname","lname","age"]
   for (let k of ele) {
-    console.log(k, persons[i][k]);
+    console.log('for loop', k, persons[i][k]);
   }
 }
 //array arrow function -ECMA 6
@@ -74,10 +74,10 @@ for (let i = 0; i < persons.length; i++) {
 //forEach -iterating the array ele -parameter(each ele, index, array)
 // () -more than one parameter else optional
 persons.forEach((item, i, arr) => {
-  console.log(item, i, arr);
+  console.log('for each persons', item, i, arr);
 });
 fruits.forEach((item) => {
-  console.log(item);
+  console.log('for each fruits', item);
 });
 
 //map -tranformation of data -(items)
@@ -91,7 +91,7 @@ let modifyPersons = persons.map((item, i) => {
     fullName: item.fname + item.lname,
   };
 });
-console.log(modifyPersons, persons);
+console.log('map persons', modifyPersons, persons);
 
 let modPersons = persons.map((item, i) => {
   return {
@@ -104,7 +104,7 @@ let modPersons = persons.map((item, i) => {
   };
 });
 
-console.log(modPersons, persons);
+console.log('map persons existing data', modPersons, persons);
 
 let company = [
   {
@@ -128,7 +128,7 @@ let companyDetails = company.map((item, i) => {
     ...item,
   };
 });
-console.log(companyDetails, company);
+console.log('map company spread operators', companyDetails, company);
 
 //spread operator (...)
 // value clone - one layer -workout
