@@ -246,9 +246,11 @@ names.splice(3, 1, 'sathiya', 'pragathi');
 console.log('add & remove -splice', names);
 //find
 console.log(names.find((item) => item == 'sathiya'));
+console.log('**********************************');
 
 //findIndex
 console.log(names.findIndex((item) => item == 'sathiya'));
+console.log('**********************************');
 
 //let numbers=[90,89,67,90,67]-duplicate removed
 let selectedvalues = [90, 89, 67, 90, 67];
@@ -262,6 +264,7 @@ selectedvalues.forEach((item) => {
   }
 });
 console.log(result);
+console.log('**********************************');
 
 // palindrome -madam ,-for loop-dec
 // "developer" -> ["de","ve","lo","pe","r"]
