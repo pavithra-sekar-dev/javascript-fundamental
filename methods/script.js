@@ -268,3 +268,16 @@ console.log('**********************************');
 
 // palindrome -madam ,-for loop-dec
 // "developer" -> ["de","ve","lo","pe","r"]
+
+let salary = 907878;
+console.log(
+  'salary',
+  salary.toString(),
+  'result',
+  result.toString(), //str of array
+  JSON.stringify(persons), //json of array -arr->str
+  JSON.stringify(person) //json  obj ->str
+);
+// str->arr/obj
+let strPerson = JSON.stringify(persons);
+console.log('str ->arr', JSON.parse(strPerson));
