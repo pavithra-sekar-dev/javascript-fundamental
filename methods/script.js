@@ -269,7 +269,7 @@ console.log('**********************************');
 // palindrome -madam ,-for loop-dec
 // "developer" -> ["de","ve","lo","pe","r"]
 
-let salary = 907878;
+let salary = 907878.667;
 console.log(
   'salary',
   salary.toString(),
@@ -278,6 +278,110 @@ console.log(
   JSON.stringify(persons), //json of array -arr->str
   JSON.stringify(person) //json  obj ->str
 );
+console.log('**********************************');
+
 // str->arr/obj
 let strPerson = JSON.stringify(persons);
 console.log('str ->arr', JSON.parse(strPerson));
+//Number,parseInt,parseFloat,toFixed
+console.log(
+  'salary',
+  salary,
+  'number',
+  'str ->num conversation Number()',
+  Number('789.91'),
+  'parseInt',
+  parseInt(salary),
+  'parseFloat',
+  parseFloat(salary),
+  'tofixed(0)',
+  salary.toFixed(0),
+  'tofixed(1)',
+  salary.toFixed(1),
+  'tofixed(2)',
+  salary.toFixed(2)
+);
+console.log('**********************************');
+
+// e-3
+// 90/1000 =0.009
+let tax = 9078;
+console.log(tax.toPrecision(2));
+let fax = 0.89;
+console.log(fax.toExponential(1));
+console.log(typeof Number('87987'));
+console.log('2' + 2, '2' - 2, 2 + undefined, 2 + '', 2 + null);
+// + concat(string)  return "22" , - number return 0
+// String Methods
+let greeting = 'Hello world good morning have a good day';
+console.log(greeting.length, greeting[1]);
+console.log(
+  greeting.slice(0, 6),
+  greeting.slice(0, -3),
+  greeting.substring(0, 6)
+);
+console.log('**********************************');
+
+console.log(greeting.replace('good', 'better'));
+console.log(greeting.replace(/good/g, 'better'));
+let fname = 'Ram kumar';
+let role = 'Developer';
+console.log(fname.replace(/ram/i, 'Vijay'));
+console.log('**********************************');
+
+let txt = fname.concat(' ', role, ' ', salary);
+console.log(txt);
+//trailing (end) & leading space (start)
+let place = ' che   n   nai   ';
+console.log('**********************************');
+
+console.log(place.trim());
+let trim_place = place.trim();
+console.log(trim_place.replace(/ /g, ''));
+// split  str -> arr
+//spliter
+
+let question = 'what is  ur name?Q.what is your age?Q.where is your place';
+let questions = question.split('Q.');
+console.log(questions);
+console.log('**********************************');
+
+// join  arr -> str
+//delimiter
+let fruitsArr = ['apple', 'orange', 'graphes'];
+console.log(fruitsArr.join('-'));
+
+console.log('**********************************');
+
+console.log(greeting.indexOf('h'));
+console.log(
+  'index -letter',
+  greeting.charAt(0),
+  'ascii code',
+  greeting.charCodeAt(25)
+);
+console.log(
+  greeting.toLowerCase(),
+  greeting.toUpperCase(),
+  greeting.endsWith('day'),
+  greeting.includes('oe')
+);
+
+console.log('**********************************');
+//destructing -ECMA6
+let admin = {
+  address: {
+    city: 'chennai',
+    pincode: '79857',
+  },
+};
+
+console.log(admin.address.city, admin.address.pincode);
+
+// structuring
+// let city = admin.address.city;
+// let pincode = admin.address.pincode;
+
+let { city, pincode } = admin.address; //destructuring
+
+console.log(city, pincode);
